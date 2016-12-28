@@ -12,6 +12,7 @@ html, body {
 }
 .main {
 	position: relative;
+	width: 100%;
 	top: -2em;
 	height: 30em;
 	background-image: url(<%= asset_data_uri 'br1.jpg' %>);
@@ -35,8 +36,11 @@ html, body {
 	position: relative;
 	top: 10em;
 	height: 25em;
+	width: 100%;
 	background-image: url(<%= asset_data_uri 'br2.jpg' %>);
 	background-position: center;
+	background-repeat: no-repeat;
+
 }
 
 
@@ -46,6 +50,7 @@ html, body {
 	left: 3em;
     height: 3em;
     width: 2em;
+    cursor: pointer;
 }
 
 ul {
@@ -77,4 +82,28 @@ ul li {
 	height: 100%;
 	background: black;
 	z-index: 10;
+}
+
+.discover-section {
+	position: relative;
+	text-align: center;
+	top: 15em;
+}
+
+.lr1 {
+    position: relative;
+	text-align: center;
+	top: 10em;
+}
+.lr2 {
+	position: relative;
+	text-align: center;
+	top: 2em;
+}
+
+.lr1 a, .lr2 a {
+	text-decoration: none;
+	padding: 1em 2em;
+	background: green;
+	color: white;
 }
