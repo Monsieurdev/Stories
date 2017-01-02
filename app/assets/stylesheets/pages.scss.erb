@@ -13,7 +13,7 @@ html, body {
 .main {
 	position: relative;
 	width: 100%;
-	top: -2em;
+	top: -5em;
 	height: 30em;
 	background-image: url(<%= asset_data_uri 'br1.jpg' %>);
 	background-position: center;
@@ -46,11 +46,13 @@ html, body {
 
 .menu-icon {
 	position: relative;
-	top: 2em;
-	left: 3em;
+	top: 1em;
+	left: 5em;
     height: 3em;
     width: 2em;
     cursor: pointer;
+    //background: black;
+    z-index: 1;
 }
 
 ul {
@@ -106,4 +108,41 @@ ul li {
 	padding: 1em 2em;
 	background: green;
 	color: white;
+}
+.footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: auto;
+	text-align: center;
+	top: 20em;
+	background: black;
+    height: 5em;
+}
+
+.footer p {
+	color: white;
+}
+
+.a-main {
+	position: relative;
+	background: #2f496d;
+	height: 30em;
+	top: -5em;
+	
+}
+
+.a-main h1 {
+	position: relative;
+	text-align: center;
+	top: 5em;
+	color: white;
+}
+.a-support  {
+	text-align: center;
+
+}
+.a-support a {
+    position: relative;
+	top: -5em;
 }

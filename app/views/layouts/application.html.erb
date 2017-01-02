@@ -7,8 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body>
+<a class="menu"><%= image_tag('menu.png', class: 'menu-icon') %></a>
+<div class="side-bar">
+  <%= image_tag("close.png", class: 'close-icon') %>
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "About", about_path %></li>
+    <li><%= link_to "Home", root_path %></li>
+  </ul>
+</div>
     <%= yield %>
+    <div class="footer">
+  <p>&copy Mohamed Monekata</p>
+</div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>
